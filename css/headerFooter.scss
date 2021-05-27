@@ -1,0 +1,42 @@
+%leftRightM {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+header {
+    @extend %leftRightM;
+    margin-top: 25px;
+    padding-right: 25px;
+    padding-left: 10px;
+    height: 60px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    b {
+        font-size: 45px;
+    }
+    button {
+        margin-left: 20px;
+        background-color: #ffffff;
+        box-shadow: 3px 3px 4px 0px #cccccc;
+        font-size: 15px;
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
+
+footer {
+    @extend %leftRightM;
+    margin-top: auto;
+    padding: 5px;
+    padding-top: 25px; 
+    padding-bottom: 10px; 
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    border-top: 2px solid black;
+}
